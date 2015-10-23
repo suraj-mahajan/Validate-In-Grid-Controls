@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="ValidateEmptyGrid.min.js"></script>
+
+	<script type="text/javascript">
+
+	function ApplyPluginFunction()
+	{
+		$('#Example').SM_Validate({
+			Message:'Sample',
+			Focus:true,
+			ShowMessage:false
+		});		
+	}
+
+	</script>
+</head>
+<body>
+
+
+<table id="Example">
+	<tr>
+		<td>
+			User Name
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input data-validate="true" type="text" >
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			Email ID
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input data-validate="true" type="text" >
+		</td>
+		</tr>
+
+	<tr>
+		<td>
+			Country
+		</td>
+		<td>:
+		</td>
+		<td>
+				<select data-validate="true">
+					<option value="0">Select</option>
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+
+				</select>
+		</td>
+	</tr>
+
+</table>
+
+
+<a href="#" onclick="ApplyPluginFunction()"> Click Me </a>
+
+</body>
+</html>
