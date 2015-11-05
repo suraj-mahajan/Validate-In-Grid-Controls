@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="ValidateEmptyGrid.js"></script>
+
+	<script type="text/javascript">
+
+	function ApplyPluginFunction()
+	{
+		$('#Example').SM_Validate({
+			Message:'Sample',
+			Focus:true,
+			RequieMessage:'{FIELD} Is Required Field.'
+		});		
+	}
+
+	</script>
+</head>
+<body>
+
+
+<table id="Example">
+	<tr>
+		<td>
+			User Name
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input  type="text" >
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			Email ID
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input validate-type="email empty" name="Email ID"   type="text" >
+		</td>
+		</tr>
+<tr>
+	<tr>
+		<td>
+			Mobile
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input validate-type="mobile " name="Mobile Number"   type="text" >
+		</td>
+		</tr>
+<tr>
+		<td>
+			url
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input validate-type="url empty" name="WebSite"   type="text" >
+		</td>
+		</tr>
+	<tr>
+
+<tr>
+		<td>
+			vehicle
+		</td>
+		<td>:
+		</td>
+		<td>
+				<input type="checkbox" validate-type="empty" name="vehicle" value="Bike"> I have a bike<br>
+  				<input type="checkbox" validate-type="empty" name="vehicle" value="Car" > I have a car<br>
+		</td>
+		</tr>
+	<tr>
+
+		<td>
+			Country
+		</td>
+		<td>:
+		</td>
+		<td>
+				<select validate-type="empty" name="Country">
+					<option value="0">Select</option>
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+
+				</select>
+		</td>
+	</tr>
+
+</table>
+
+
+<a href="#" onclick="return ApplyPluginFunction();"> Click Me </a>
+
+<input type="submit" value="Execute" OnClick="return ApplyPluginFunction();">
+
+</body>
+</html>
